@@ -1,4 +1,4 @@
-# PeerLink - P2P File Sharing Application
+# P2P File Sharing Application
 
 PeerLink is a peer-to-peer file sharing application that allows users to share files directly between devices using a simple invite code system.
 
@@ -191,11 +191,6 @@ classDiagram
 ## Security Considerations
 
 - This is a demo application and does not include encryption or authentication
-- For production use, consider adding:
-  - File encryption
-  - User authentication
-  - HTTPS support
-  - Port validation and security
 
 ## Deployment
 
