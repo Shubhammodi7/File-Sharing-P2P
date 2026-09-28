@@ -1,4 +1,4 @@
-# PeerLink Deployment Guide
+# Deployment Guide
 
 This guide outlines several easy deployment options for the PeerLink application, covering both the Java backend and Next.js frontend.
 
@@ -148,33 +148,3 @@ Since PeerLink is a P2P application that uses dynamic ports for file sharing:
 2. **Firewall Configuration**: Ensure your firewall allows connections on these ports
 
 3. **NAT Traversal**: Consider implementing STUN/TURN servers for NAT traversal if deploying for wide-scale use
-
-4. **Security**: For production deployment, implement:
-   - HTTPS for the frontend and API
-   - Authentication system
-   - File encryption
-   - Rate limiting
-
-## Recommended Approach for Beginners
-
-For the easiest deployment:
-
-1. **Backend**: Deploy to Railway or Heroku
-2. **Frontend**: Deploy to Vercel
-
-This combination provides:
-- Zero server configuration
-- Automatic HTTPS
-- Easy scaling
-- Free tier options for testing
-
-## Monitoring and Scaling
-
-Once deployed, consider:
-
-1. Adding application monitoring with tools like New Relic or Datadog
-2. Setting up logging with ELK stack or a cloud logging service
-3. Implementing a database for user accounts and file metadata
-4. Adding a CDN for improved performance
-
-Remember that the current implementation is designed for demonstration purposes. For a production-ready P2P file sharing service, additional work on security, scalability, and reliability would be necessary.
